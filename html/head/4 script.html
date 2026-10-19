@@ -1,0 +1,48 @@
+<!--
+la etiqueta <script> se utiliza para incluir código JavaScript en un documento HTML. Esto permite agregar interactividad,
+dinamismo y funcionalidad a la página web, como validación de formularios, anim|aciones, efectos visuales y comunicación 
+con servidores web.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    <script>
+        function saludar() {
+            alert("¡Hola! Este es mi primer script embevido.");
+        }
+    </script>
+    -->
+    <script src="../../js/head.js"></script>
+
+    <!--
+    #atributos
+    - async: Indica que el script debe ejecutarse de forma asíncrona, lo que significa que no bloqueará la carga del resto del documento mientras se descarga y ejecuta.
+    - defer: Indica que el script debe ejecutarse después de que el documento HTML se
+    - src: Especifica la URL del archivo JavaScript externo que se va a incluir en el documento.
+    - attributionsrc: Especifica la URL del archivo JavaScript externo que se va a incluir en el documento, pero con la capacidad de proporcionar información adicional sobre el origen del script.
+    - type: Especifica el tipo de contenido del script, como "text/javascript"
+    - blocking: Indica si el script debe bloquear la carga del documento hasta que se haya cargado, con valores como "render" o "script".
+    - crossorigin: Indica si se deben enviar credenciales (como cookies) al solicitar el script, con valores como "anonymous" o "use-credentials".
+    - fetchpriority: Indica la prioridad de carga del script, con valores como "high", "low" o "auto".
+        #palabras clave
+        - high: Indica que el script debe cargarse con alta prioridad.
+        - low: Indica que el script debe cargarse con baja prioridad.
+        - auto: Indica que el navegador debe determinar la prioridad de carga del script automáticamente.
+    
+    #e.j.
+    <script
+        src="myscript.js"
+        attributionsrc="https://a.example/register-source https://b.example/register-source"></script>
+    <script async src="js/vendor/jquery.js"></script>
+    -->
+</head>
+<body>
+    <h1>Hola, mundo</h1>
+    <button onclick="saludar()">Haz clic aquí</button>
+</body>
+</html>
