@@ -1,0 +1,82 @@
+<!--
+la etiqueta <body> se utiliza para contener el contenido principal de un documento HTML, como texto, 
+imágenes, videos, enlaces y otros elementos que se muestran en la página web.
+
+la etiqueta <table> se utiliza para crear tablas en un documento HTML, lo que permite organizar y 
+presentar datos de manera estructurada y legible.
+
+la etiqueta <tr> se utiliza para definir una fila en una tabla HTML, lo que permite agrupar celdas de 
+datos en una fila específica y mantener la estructura de la tabla.
+
+la etiqueta <th> se utiliza para definir una celda de encabezado en una tabla HTML, lo que permite
+resaltar y describir el contenido de una columna o fila específica, mejorando la comprensión de
+los datos presentados en la tabla.
+
+la etiqueta <td> se utiliza para definir una celda de datos en una tabla HTML, lo que permite
+presentar información específica en una fila y columna determinada, manteniendo la estructura de la tabla y
+facilitando la lectura y comprensión de los datos.
+
+la etiqueta <caption> se utiliza para proporcionar un título o descripción para una tabla en un documento HTML,
+lo que permite a los usuarios comprender mejor el propósito y el contenido de la tabla, mejorando
+la accesibilidad y la experiencia del usuario al interactuar con la información presentada en la tabla.
+
+la etiqueta <thead> se utiliza para agrupar el contenido del encabezado de una tabla en un documento HTML,
+lo que permite separar visualmente el encabezado del resto de la tabla y mejorar la organización y
+presentación de los datos.
+
+la etiqueta <tbody> se utiliza para agrupar el contenido del cuerpo de una tabla en un documento HTML,
+lo que permite separar visualmente el cuerpo de la tabla del encabezado y mejorar la organización y
+presentación de los datos.
+
+la etiqueta <tfoot> se utiliza para agrupar el contenido del pie de una tabla en un documento HTML,
+lo que permite separar visualmente el pie de la tabla del resto de la tabla y mejorar la organización y presentación de los datos.  
+
+-->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <table>
+            <caption>Tabla de ejemplo</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>25</td>
+                    <td>Madrid</td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>30</td>
+                    <td>Barcelona</td>
+                </tr>
+                <tr>
+                    <td>Lucía</td>
+                    <td>28</td>
+                    <td>Valencia</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Fin de la tabla</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
+

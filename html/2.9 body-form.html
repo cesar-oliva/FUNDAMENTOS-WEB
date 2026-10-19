@@ -1,0 +1,232 @@
+<!--
+la etiqueta <body> se utiliza para contener el contenido principal de un documento HTML, como texto, 
+imágenes, videos, enlaces y otros elementos que se muestran en la página web.
+
+la etiqueta <button> se utiliza para crear un botón interactivo en un documento HTML, que puede 
+ser utilizado para enviar formularios, activar eventos o realizar acciones específicas cuando el usuario hace clic en él.
+
+la etiqueta <input> se utiliza para crear campos de entrada en un formulario HTML, lo que permite a los usuarios ingresar 
+datos, como texto, contraseñas, correos electrónicos, números y otros tipos de información.
+
+la etiqueta <label> se utiliza para asociar un texto descriptivo con un elemento de formulario, como un campo de entrada,
+lo que mejora la accesibilidad y la usabilidad del formulario al permitir a los usuarios identificar fácilmente
+el propósito de cada campo de entrada y facilitar la interacción con el formulario.
+
+la etiqueta <form> se utiliza para crear un formulario en un documento HTML, lo que permite a los usuarios enviar datos
+a un servidor web para su procesamiento, como el envío de información de contacto, comentarios o cualquier
+otro tipo de datos que se requiera recopilar a través de la página web.
+
+la etiqueta <select> se utiliza para crear un menú desplegable en un formulario HTML, lo que permite a los usuarios
+seleccionar una opción de una lista predefinida de valores, mejorando la experiencia del usuario y facilitando la recopilación 
+de datos en el formulario.
+
+la etiqueta <option> se utiliza para definir una opción dentro de un elemento <select> en un formulario HTML, lo que permite a 
+los usuarios
+
+la etiqueta <textarea> se utiliza para crear un campo de texto de varias líneas en un formulario HTML, lo que permite a los usuarios ingresar
+información más extensa, como comentarios, descripciones o cualquier otro tipo de texto que requiera
+más espacio que un campo de entrada de una sola línea, mejorando la experiencia del usuario y
+facilitando la recopilación de datos en el formulario.
+
+la etiqueta <fieldset> se utiliza para agrupar elementos relacionados dentro de un formulario HTML, lo que permite organizar y 
+estructurar mejor el contenido del formulario, mejorando la experiencia del usuario y facilitando la comprensión de los datos 
+que se están recopilando.
+
+la etiqueta <legend> se utiliza para proporcionar un título o descripción para un grupo de elementos dentro de un formulario HTML,
+lo que permite a los usuarios comprender mejor el propósito y la relación entre los elementos agrupados,
+mejorando la accesibilidad y la experiencia del usuario al interactuar con el formulario.
+
+la etiqueta <datalist> se utiliza para proporcionar una lista de opciones predefinidas para un campo de entrada en un formulario HTML,
+lo que permite a los usuarios seleccionar una opción de la lista mientras escriben, mejorando la experiencia del usuario y facilitando 
+la entrada de datos en el formulario.
+
+la etiqueta <output> se utiliza para mostrar el resultado de un cálculo o una acción en un formulario HTML,
+lo que permite a los usuarios ver el resultado de sus interacciones con el formulario, mejorando
+la experiencia del usuario y facilitando la comprensión de los datos que se están procesando.
+
+la etiqueta <progress> se utiliza para mostrar visualmente el progreso de una tarea o proceso en un documento HTML,
+lo que permite a los usuarios ver el estado de avance de una acción, como la carga de archivos, la descarga de contenido 
+o cualquier otro proceso que requiera tiempo, mejorando la experiencia de usuario y proporcionando retroalimentación visual 
+sobre el progreso de la tarea.
+
+la etiqueta <meter> se utiliza para mostrar visualmente un valor dentro de un rango específico en un documento HTML,
+lo que permite a los usuarios ver la relación entre el valor actual y los valores mínimo y máximo
+permitidos, mejorando la experiencia de usuario y proporcionando retroalimentación visual sobre el estado de
+un proceso o medición, como el nivel de batería, la velocidad de conexión o cualquier otro
+tipo de medición que requiera una representación visual del valor dentro de un rango determinado.
+-->
+    
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción al curso de desarrollo web</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Curso de Desarrollo Web</h1>
+        <p class="descripcion">
+            Completá el formulario para inscribirte al curso.
+        </p>
+        <!-- FORMULARIO PRINCIPAL -->
+        <form id="formulario">
+            <!-- FIELDSET Y LEGEND -->
+            <fieldset>
+                <legend>Datos personales</legend>
+                <!-- INPUT Y LABEL -->
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ejemplo: Juan Pérez"
+                        required
+                    >
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="correo@ejemplo.com"
+                        required
+                    >
+                </div>
+                <div class="campo">
+                    <label for="edad">Edad:</label>
+
+                    <input
+                        type="number"
+                        id="edad"
+                        name="edad"
+                        min="12"
+                        max="100"
+                        placeholder="Ejemplo: 25"
+                        required
+                    >
+                </div>
+            </fieldset>
+            <!-- SELECT Y OPTION -->
+            <fieldset>
+                <legend>Información del curso</legend>
+                <div class="campo">
+                    <label for="curso">Seleccioná un curso:</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Elegí una opción</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="completo">Desarrollo web completo</option>
+                    </select>
+                </div>
+                <!-- DATALIST -->
+                <div class="campo">
+                    <label for="nivel">¿Cuál es tu nivel de experiencia?</label>
+                    <input
+                        type="text"
+                        id="nivel"
+                        name="nivel"
+                        list="niveles"
+                        placeholder="Elegí o escribí tu nivel"
+                    >
+                    <datalist id="niveles">
+                        <option value="Principiante"></option>
+                        <option value="Intermedio"></option>
+                        <option value="Avanzado"></option>
+                    </datalist>
+                    <p class="ayuda">
+                        Podés seleccionar una sugerencia o escribir otra respuesta.
+                    </p>
+                </div>
+                <!-- TEXTAREA -->
+                <div class="campo">
+                    <label for="comentarios">¿Qué te gustaría aprender?</label>
+                    <textarea
+                        id="comentarios"
+                        name="comentarios"
+                        rows="4"
+                        placeholder="Escribí tus objetivos..."
+                    ></textarea>
+                </div>
+            </fieldset>
+            <!-- CHECKBOX -->
+            <div class="campo checkbox">
+                <input
+                    type="checkbox"
+                    id="terminos"
+                    name="terminos"
+                    required
+                >
+                <label for="terminos">
+                    Acepto las condiciones del curso.
+                </label>
+            </div>
+            <!-- BUTTON -->
+            <button type="submit">
+                Inscribirme al curso
+            </button>
+            <button
+                type="reset"
+                class="boton-secundario"
+            >
+                Limpiar formulario
+            </button>
+        </form>
+        <!-- OUTPUT -->
+        <section class="panel">
+            <h2>Resultado del formulario</h2>
+            <p>
+                El elemento output permite mostrar resultados
+                generados mediante JavaScript.
+            </p>
+            <output id="resultado" aria-live="polite">
+                Todavía no enviaste el formulario.
+            </output>
+        </section>
+
+        <!-- PROGRESS -->
+
+        <section class="panel">
+            <h2>Progreso del curso</h2>
+            <p>Tu avance en las lecciones:</p>
+            <progress id="progreso" value="3" max="10">
+                30%
+            </progress>
+            <p id="texto-progreso">3 de 10 lecciones completadas.</p>
+            <button type="button" id="avanzar">
+                Completar una lección
+            </button>
+        </section>
+
+        <!-- METER -->
+
+        <section class="panel">
+            <h2>Nivel de conocimientos</h2>
+            <p>Este indicador representa un nivel de conocimientos ficticio.</p>
+            <meter
+                id="conocimiento"
+                min="0"
+                max="100"
+                low="30"
+                high="70"
+                optimum="100"
+                value="40"
+            >
+                40 de 100
+            </meter>
+            <p id="texto-conocimiento">
+                Nivel actual: 40 de 100.
+            </p>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
+

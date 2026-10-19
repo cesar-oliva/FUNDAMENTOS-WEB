@@ -1,0 +1,87 @@
+<!--
+la etiqueta <body> se utiliza para contener el contenido principal de un documento HTML, como texto, 
+imágenes, videos, enlaces y otros elementos que se muestran en la página web.
+
+la etiqueta <image> se utiliza para insertar imágenes en un documento HTML, lo que permite mostrar 
+contenido visual y mejorar la experiencia del usuario en la página web.
+
+la etiqueta <figure> se utiliza para agrupar contenido visual, como imágenes, gráficos o diagramas, 
+junto con su descripción o leyenda, lo que permite una mejor organización y presentación del contenido en un documento HTML.
+
+la etiqueta <figcaption> se utiliza para proporcionar una leyenda o descripción para un elemento <figure> en un documento HTML,
+lo que permite a los usuarios comprender mejor el contenido visual y su contexto dentro de la página web
+
+la etiqueta <video> se utiliza para insertar contenido de video en un documento HTML, lo que permite a los usuarios 
+ver videos directamente en la página web sin necesidad de utilizar reproductores externos.
+
+la etiqueta <audio> se utiliza para insertar contenido de audio en un documento HTML, lo que permite a los usuarios
+escuchar música, efectos de sonido o cualquier otro tipo de audio directamente en la página web sin
+
+-->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>       
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-container,
+        figure {
+            text-align: center;
+            margin: 0;
+        }
+
+        .image-container img,
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }  
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Imagen -->
+        <div class="container">
+            <div class="image-container" style="text-align: center; margin-top: 20px;">
+                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Imagen de ejemplo" width="500">
+                <p>Esta es una imagen de ejemplo insertada.</p>
+            </div>
+            <figure style="text-align: center; margin-top: 20px;">
+                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Imagen de ejemplo" width="500">
+                <figcaption>Esta es una figura con su leyenda.</figcaption>
+            </figure>
+        </div>
+
+        <!-- Video -->
+        <div class="video-container" style="text-align: center; margin-top: 20px;">
+            <video width="500" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Este es un video de ejemplo insertado en un documento HTML.</p>
+        </div>
+
+        <!-- Audio -->
+        <div class="audio-container" style="text-align: center; margin-top: 20px;">
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Tu navegador no soporta la etiqueta de audio.
+            </audio>
+            <p>Este es un audio de ejemplo insertado en un documento HTML.</p>
+        </div>
+
+
+
+    </main>
+</body>
+</html>
+
