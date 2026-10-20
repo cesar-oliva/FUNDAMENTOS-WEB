@@ -1,0 +1,64 @@
+<!-- la etiqueta <article> se utiliza para definir un contenido independiente y autocontenido dentro 
+de un documento HTML
+
+la etiqueta <span> se utiliza para aplicar estilos o identificar un fragmento de texto dentro de un elemento en línea,
+lo que permite una mayor flexibilidad en la presentación y el diseño del contenido, sin afectar la
+estructura general del documento.
+
+La etiqueta <cite> se utiliza para referenciar el título de una obra, como un libro, una película o un artículo,
+lo que permite a los navegadores y a las tecnologías de asistencia interpretar y mostrar correctamente
+
+la etiqueta <i> se utiliza para aplicar un estilo de texto en cursiva a un fragmento de contenido, lo que permite
+enfatizar o diferenciar visualmente ciertas palabras o frases dentro de un documento HTML.
+
+la etiqueta <hr> se utiliza para crear una línea horizontal que separa visualmente el contenido en un documento HTML,
+lo que permite una mejor organización y legibilidad del contenido.
+# atributos
+    - aline: especifica la alineación de la línea horizontal (izquierda, centro o derecha).
+    - color: especifica el color de la línea horizontal.
+    - size: especifica el grosor de la línea horizontal.
+    - width: especifica el ancho de la línea horizontal.
+    - noshade: especifica si la línea horizontal debe ser sombreada o no.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid green;
+            text-align: center;
+            background-color: lightgreen;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Apples</h1>
+            <p>The apple is the pomaceous fruit of the apple tree.</p>
+            <hr aline:"center" color="green" size="5" width="50%" noshade>
+            <article>
+                <h2>Red Delicious</h2>
+                <p>These bright red apples are the most common found in many supermarkets.</p>
+                <p>Texto idiomatico <i lang="la">Veni, vidi, vici</i></p>
+                <p>…</p>
+            </article>
+            <hr>
+            <p>More information can be found in <cite>[ISO-0000]</cite>.</p>
+        </div>
+
+
+        <article>
+            <h2>Granny Smith</h2>
+            <p>These juicy, green apples make a great filling for apple pies.</p>
+            <p>…</p>
+            <p>…</p>
+        </article>
+    </main>
+</body>
+</html>
