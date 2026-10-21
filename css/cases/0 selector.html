@@ -1,0 +1,65 @@
+<!--
+Los selectores en CSS son los patrones que le indican al navegador a qué elementos 
+HTML se les van a aplicar los estilos. En otras palabras, son la forma de "apuntar" 
+o buscar los elementos en tu página web para estilizarlos.
+# selectores
+    etiqueta (tag): selecciona todos los elementos de un tipo específico, por ejemplo, 
+    todos los <p> o todos los <div>.
+    clase (.clase): selecciona todos los elementos que tienen una clase específica, por ejemplo, 
+    todos los elementos con la clase "mi-clase".
+    id (#id): selecciona un elemento único con un id específico, por ejemplo, el elemento 
+    con id="mi-id".
+    universal (*): selecciona todos los elementos de la página.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Selector universal: Afecta a todos los elementos */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* Selector de etiqueta: Afecta a todos los <h1> */
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
+
+        /* Selector de clase: Afecta a todos los elementos con la clase "tarjeta" */
+        .tarjeta {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Selector de ID: Afecta al elemento con id "boton-especial" */
+        #boton-especial {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Selector de etiqueta: Afecta a cualquier <h1> -->
+    <h1>Título Principal</h1>
+
+    <!-- Selector de clase: Se aplica usando class="tarjeta" -->
+    <div class="tarjeta">
+        <!-- Selector de etiqueta: Afecta a cualquier <p> -->
+        <p>Este es un texto dentro de una tarjeta.</p>
+    </div>
+
+    <!-- Selector de ID: Se aplica usando id="boton-especial" -->
+    <button id="boton-especial">Haz clic aquí</button>
+</body>
+</html>

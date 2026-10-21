@@ -10,6 +10,12 @@ lo que permite personalizar su apariencia sin afectar el flujo del contenido cir
 
 la etiqueta <mark> se utiliza para resaltar o marcar un fragmento de texto en un documento HTML, generalmente con un fondo amarillo,
 lo que indica que ese texto es importante o relevante para el usuario.
+
+la etiqueta <fieldset> se utiliza para agrupar elementos de un formulario en un documento HTML, lo que permite
+una mejor organización y presentación del contenido del formulario.
+
+la etiqueta <legend> se utiliza para proporcionar un título o descripción para un grupo de elementos de un formulario
+en un documento HTML, lo que permite a los usuarios comprender mejor el propósito del grupo de elementos
 -->
     
 <!DOCTYPE html>
@@ -24,12 +30,15 @@ lo que indica que ese texto es importante o relevante para el usuario.
         <h1>Mi página web</h1>
 
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+            <fieldset>
+                <legend>Elige un enlace</legend>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </fieldset>
         </nav>
     </header>
 

@@ -14,6 +14,8 @@ ver videos directamente en la página web sin necesidad de utilizar reproductore
 la etiqueta <audio> se utiliza para insertar contenido de audio en un documento HTML, lo que permite a los usuarios
 escuchar música, efectos de sonido o cualquier otro tipo de audio directamente en la página web sin
 
+la etiqueta <iframe> se utiliza para incrustar contenido de otra fuente, como una página web externa, un mapa o un video,
+dentro de un documento HTML, lo que permite a los usuarios interactuar con el contenido incr
 -->
     
 <!DOCTYPE html>
@@ -74,6 +76,22 @@ escuchar música, efectos de sonido o cualquier otro tipo de audio directamente 
                 Tu navegador no soporta la etiqueta de audio.
             </audio>
             <p>Este es un audio de ejemplo insertado en un documento HTML.</p>
+        </div>
+
+        <!-- Iframe básico -->
+        <div class="iframe-container" style="text-align: center; margin-top: 20px;">
+            <h1>Encuéntranos aquí</h1>
+            <p>Te esperamos en nuestra sucursal principal:</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878893565!2d-58.38416552347712!3d-34.60373887295484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb6b%3A0x11abaddcb9b542ad!2sObelisco!5s0!3f0!3m2!1i1024!2i768!4f13.1" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa de ubicación del Obelisco">
+            </iframe>
         </div>
     </main>
 </body>
