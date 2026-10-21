@@ -17,7 +17,6 @@ Se puede especificar utilizando colores, imágenes, gradientes y otras opciones 
             color: #333333;
             padding: 20px;
         }
-
         /* 2. Cambiar el color de fondo de una tarjeta o contenedor */
         .tarjeta {
             background-color: #aaf7a0; /* Blanco para destacar sobre el fondo */
@@ -27,7 +26,6 @@ Se puede especificar utilizando colores, imágenes, gradientes y otras opciones 
             max-width: 600px;
             margin: 0 auto;
         }
-
         /* 3. Cambiar el color de fondo de un botón */
         .boton {
             background-color: #779ad1; /* Azul brillante */
@@ -37,9 +35,31 @@ Se puede especificar utilizando colores, imágenes, gradientes y otras opciones 
             border-radius: 4px;
             cursor: pointer;
         }
-
         .boton:hover {
             background-color: rgba(22, 62, 240, 0.2); /* Un azul un poco más oscuro al pasar el ratón */
+        }
+        /* Contenedor con la imagen de fondo */
+        .hero-banner {
+            /* 1. Ruta de la imagen (puede ser una URL de internet o una local como 'imagen.jpg') */
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80');
+            
+            /* 2. Propiedades esenciales para que la imagen se vea bien */
+            background-size: cover;      /* Cubre todo el espacio sin deformarse */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat;/* Evita que la imagen se repita como loseta */
+            
+            /* 3. Estilos de contenido para que se lea el texto encima */
+            margin: 20px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-repeat: repeat-x;
         }
     </style>
 </head>
@@ -48,6 +68,10 @@ Se puede especificar utilizando colores, imágenes, gradientes y otras opciones 
         <h2>¡Hola!</h2>
         <p>Este contenedor tiene un fondo blanco (`background-color: #ffffff`) para contrastar con el fondo gris de la página.</p>
         <button class="boton">Botón de prueba</button>
+    </div>
+    <div class="hero-banner">
+        <h1>¡Hola, este es un fondo con imagen!</h1>
+        <p>Usamos background-size: cover para que se ajuste perfectamente.</p>
     </div>
 </body>
 </html>
