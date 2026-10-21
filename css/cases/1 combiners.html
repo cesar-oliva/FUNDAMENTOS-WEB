@@ -16,49 +16,49 @@ que cumplen ciertas condiciones de relación.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* Selecciona CUALQUIER etiqueta que esté dentro de .contenedor */
-        .contenedor * {
+        /* Selecciona CUALQUIER etiqueta que esté dentro de .conteiner */
+        .conteiner * {
         border: 1px dashed red;
         color: purple;
         }
         /* 1. Combinador Descendiente (Espacio " ")
-        Afecta a CUALQUIER <p> que esté dentro de .contenedor (hijos, nietos, bisnietos...). */
-        .contenedor p {
+        Afecta a CUALQUIER <p> que esté dentro de .conteiner (hijos, nietos, bisnietos...). */
+        .conteiner p {
         color: #333;
         }
 
         /* 2. Combinador de Hijo Directo (Signo mayor que ">")
-        Afecta ÚNICAMENTE a los <p> que son hijos directos (primer nivel) de .contenedor.
-        (El Párrafo 2 de la caja interna se salva porque está más adentro). */
-        .contenedor > p {
+        Afecta ÚNICAMENTE a los <p> que son hijos directos (primer nivel) de .conteiner.
+        (El Párrafo 2 de la box interna se salva porque está más adentro). */
+        .conteiner > p {
         font-weight: bold;
         }
 
         /* 3. Combinador de Hermano Adyacente (Signo más "+")
-        Afecta al PRIMER elemento <p> que esté inmediatamente después de .caja. */
-        .caja + p {
+        Afecta al PRIMER elemento <p> que esté inmediatamente después de .box. */
+        .box + p {
         color: red;
         }
 
         /* 4. Combinador de Hermanos Generales (Virgulilla "~")
-        Afecta a TODOS los <p> que sean hermanos y estén después de .caja. */
-        .caja ~ p {
+        Afecta a TODOS los <p> que sean hermanos y estén después de .box. */
+        .box ~ p {
         background-color: lightgray;
         }
                 
     </style>
 </head>
 <body>
-    <div class="contenedor">
+    <div class="conteiner">
         <h1>Título principal</h1>
-        <p>Párrafo 1 (hijo directo de .contenedor)</p>
+        <p>Párrafo 1 (hijo directo de .conteiner)</p>
         
-        <div class="caja">
-            <p>Párrafo 2 (está dentro de .caja, pero es nieto de .contenedor)</p>
+        <div class="box">
+            <p>Párrafo 2 (está dentro de .box, pero es nieto de .conteiner)</p>
         </div>
 
-        <p>Párrafo 3 (hermano directo, viene justo después de .caja)</p>
-        <p>Párrafo 4 (hermano general de .caja)</p>
+        <p>Párrafo 3 (hermano directo, viene justo después de .box)</p>
+        <p>Párrafo 4 (hermano general de .box)</p>
     </div>
 </body>
 </html>

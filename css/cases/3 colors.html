@@ -1,0 +1,51 @@
+<!--
+En CSS, color es una propiedad que permite definir el color del texto de un elemento. 
+Se puede especificar utilizando nombres de colores, valores hexadecimales, valores RGB o HSL. 
+Además, se pueden aplicar diferentes colores a distintos elementos utilizando selectores y combinadores.
+#Fuentes:
+    https://colorhunt.co/
+    https://htmlcolorcodes.com/es/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: lightsalmon; /* Color de fondo */
+        }
+        .hexadecimal {
+            color: #3498db; /* Color azul en formato hexadecimal */
+        }
+        .rgb {
+            color: rgb(231, 76, 60); /* Color rojo en formato RGB */
+        }
+        .hsl {
+            color: hsl(120, 100%, 25%); /* Color verde en formato HSL */
+        }
+        .rgba {
+            color: rgba(231, 76, 60, 0.5); /* Color rojo con transparencia en formato RGBA */
+        }
+        .hsla {
+            color: hsla(120, 100%, 25%, 0.5); /* Color verde con transparencia en formato HSLA */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="border:2px solid lightsalmon;">Ejemplo de uso de la propiedad color en CSS</h1>
+    <p style="color:Tomato;">Este párrafo tiene un color de texto predeterminado.</p>
+
+    <article>
+        <h2>Artículo con color personalizado</h2>
+        <p class ="hexadecimal">Este párrafo tiene un color azul definido mediante un valor hexadecimal.</p>
+        <p class="rgb">Este párrafo tiene un color rojo definido mediante valores RGB.</p>
+        <p class="hsl">Este párrafo tiene un color verde definido mediante valores HSL.</p>
+        <p class="rgba">Este párrafo tiene un color transparente definido mediante valores RGBA.</p>
+        <p class="hsla">Este párrafo tiene un color transparente definido mediante valores HSLA.</p>
+    </article>
+
+</body>
+</html>

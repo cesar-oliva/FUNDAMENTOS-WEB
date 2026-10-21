@@ -1,0 +1,68 @@
+<!--
+En CSS, agrupar selectores consiste en aplicar exactamente el mismo bloque de estilos a 
+varios selectores diferentes de forma simultánea. Para lograrlo, simplemente debes separar 
+cada selector utilizando una coma (,).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos generales de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+
+        /* 
+          1. COMBINADOR DESCENDIENTE (espacio) + AGRUPACIÓN (coma):
+          Selecciona todos los elementos <p> que estén dentro de .card 
+          Y TAMBIÉN todos los <p> que estén dentro de .sidebar.
+        */
+        .card p, .sidebar p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* 
+          2. COMBINADOR DE HIJO DIRECTO (>) + AGRUPACIÓN:
+          Selecciona únicamente los títulos <h2> que sean hijos directos 
+          de un <header> o de una <section>.
+        */
+        header > h2, section > h2 {
+            border-bottom: 2px solid #3498db;
+            color: #2c3e50;
+        }
+
+        /* 
+          3. COMBINADOR DE HERMANO ADYACENTE (+) + AGRUPACIÓN:
+          Selecciona el primer párrafo <p> que esté inmediatamente después 
+          de un <h1> O de un <h2>.
+        */
+        h1 + p, h2 + p {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Título dentro del header (Hijo directo)</h2>
+        <p>Este párrafo está inmediatamente después de un h2 (Hermano adyacente), por lo que se ve en rojo y negrita.</p>
+        <p>Este otro párrafo también está en el header, pero no está pegado al h2.</p>
+    </header>
+
+    <section class="card">
+        <h2>Sección con tarjeta</h2>
+        <p>Este párrafo es descendiente de .card (Combinador descendiente).</p>
+    </section>
+
+    <aside class="sidebar">
+        <p>Este párrafo es descendiente de .sidebar (Combinador descendiente).</p>
+    </aside>
+</body>
+</html>

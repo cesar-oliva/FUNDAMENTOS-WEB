@@ -1,0 +1,53 @@
+<!--
+En CSS, background es una propiedad que permite definir el fondo de un elemento.
+Se puede especificar utilizando colores, imágenes, gradientes y otras opciones de fondo.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de background-color</title>
+    <style>
+        /* 1. Cambiar el color de fondo de toda la página */
+        body {
+            background-color: #f4f6f8; /* Un gris muy suave y moderno */
+            font-family: Arial, sans-serif;
+            color: #333333;
+            padding: 20px;
+        }
+
+        /* 2. Cambiar el color de fondo de una tarjeta o contenedor */
+        .tarjeta {
+            background-color: #aaf7a0; /* Blanco para destacar sobre el fondo */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 3. Cambiar el color de fondo de un botón */
+        .boton {
+            background-color: #779ad1; /* Azul brillante */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            background-color: rgba(22, 62, 240, 0.2); /* Un azul un poco más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <h2>¡Hola!</h2>
+        <p>Este contenedor tiene un fondo blanco (`background-color: #ffffff`) para contrastar con el fondo gris de la página.</p>
+        <button class="boton">Botón de prueba</button>
+    </div>
+</body>
+</html>
